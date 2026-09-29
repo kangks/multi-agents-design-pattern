@@ -1,0 +1,8 @@
+[
+  {
+    "name": "sandbox",
+    "description": "ml-sandbox Claude SDK + AgentCore Harness evidence proof (Mode A/B only, no VPC/NAT/EIP)",
+    "account": "654654616949",
+    "region": "us-east-1"
+  }
+]

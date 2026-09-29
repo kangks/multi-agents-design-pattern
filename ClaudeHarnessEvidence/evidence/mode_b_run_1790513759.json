@@ -1,0 +1,47 @@
+{
+  "run_id": "49289279-7de9-4a31-94d3-a57642d362f0",
+  "coordinator_pid": 98110,
+  "total_elapsed_ms": 45810,
+  "tool_calls": [
+    {
+      "tool_name": "ToolSearch",
+      "input": {
+        "query": "select:mcp__specialists__invoke_specialist",
+        "max_results": 1
+      }
+    },
+    {
+      "tool_name": "mcp__specialists__invoke_specialist",
+      "input": {
+        "name": "StmtInterpreter",
+        "kind": "interpret_statement",
+        "partner_id": "P",
+        "fragment": "Synthetic Partner P statement: invoice INV-1001 for $500.00, invoice INV-1002 for $250.00. Total: $750.00.",
+        "session_id": "interpret_statement_partner_p_session_20260927_001"
+      }
+    },
+    {
+      "tool_name": "mcp__specialists__invoke_specialist",
+      "input": {
+        "name": "StmtInterpreter",
+        "kind": "interpret_statement",
+        "partner_id": "Q",
+        "fragment": "Synthetic Partner Q statement: invoice INV-1001 for $500.00, invoice INV-1003 for $125.00. Total: $625.00.",
+        "session_id": "interpret_statement_partner_q_session_20260927_002"
+      }
+    },
+    {
+      "tool_name": "mcp__specialists__invoke_specialist",
+      "input": {
+        "name": "LedgerReconciler",
+        "kind": "reconcile",
+        "interpreted_p": "**Extracted Invoice Data:**\n\n| Invoice ID | Amount |\n|------------|--------|\n| INV-1001 | $500.00 |\n| INV-1002 | $250.00 |",
+        "interpreted_q": "**Extracted Invoices:**\n\n| Invoice ID | Amount |\n|---|---|\n| INV-1001 | $500.00 |\n| INV-1003 | $125.00 |",
+        "session_id": "reconcile_ledger_session_20260927_003"
+      }
+    }
+  ],
+  "final_text": "The reconciliation is complete: Partner P and Partner Q agree only on invoice INV-1001 for $500.00, while INV-1002 ($250.00) appears only in Partner P and INV-1003 ($125.00) appears only in Partner Q, indicating unmatched discrepancies between the two ledgers.",
+  "result_is_error": false,
+  "num_turns": 5
+}

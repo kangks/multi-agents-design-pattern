@@ -1,0 +1,31 @@
+{
+  "denied_unknown_specialist_adapter_level": {
+    "specialist": "NotOnAllowlist",
+    "session_id": "denied-unknown-specialist-session-00001",
+    "status": "error",
+    "text": null,
+    "detail": "specialist 'NotOnAllowlist' is not on the allowlist; AWS was never called"
+  },
+  "unsafe_input_extra_field_rejected": {
+    "input": {"name": "StmtInterpreter", "kind": "interpret_statement", "partner_id": "P", "fragment": "x", "command": "rm -rf /"},
+    "rejected_by": "pydantic InterpretTask(extra='forbid')",
+    "error": "1 validation error for InterpretTask\ncommand\n  Extra inputs are not permitted [type=extra_forbidden, input_value='rm -rf /', input_type=str]"
+  },
+  "unsafe_input_missing_field_rejected": {
+    "input": {"name": "StmtInterpreter", "kind": "interpret_statement", "partner_id": "P"},
+    "rejected_by": "pydantic InterpretTask required field validation",
+    "error": "1 validation error for InterpretTask\nfragment\n  Field required [type=missing, input_value={'partner_id': 'P'}, input_type=dict]"
+  },
+  "denied_unknown_specialist_via_mcp_tool": {
+    "input": {"name": "SomeOtherHarnessNotDeployed", "kind": "interpret_statement", "partner_id": "P", "fragment": "x"},
+    "result": {"specialist": "SomeOtherHarnessNotDeployed", "status": "error", "detail": "specialist 'SomeOtherHarnessNotDeployed' is not on the allowlist; AWS was never called"}
+  },
+  "aws_level_denial_malformed_harness_arn": {
+    "harnessArn": "arn:aws:bedrock-agentcore:us-east-1:654654616949:harness/DoesNotExist-000000",
+    "error": "ValidationException: Invalid harness ARN format."
+  },
+  "aws_level_denial_invoke_agent_runtime_on_harness_backed_runtime": {
+    "agentRuntimeArn": "arn:aws:bedrock-agentcore:us-east-1:654654616949:runtime/harness_ClaudeHarnessEvidence_StmtInterpreter-Kjn7S9CyYC",
+    "error": "ValidationException: The agent runtime ... is managed by a harness and cannot be invoked directly. Use the InvokeHarness API with the relevant harness ID instead."
+  }
+}

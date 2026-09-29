@@ -1,0 +1,24 @@
+{
+  "stackName": "AgentCore-ClaudeHarnessEvidence-sandbox",
+  "target": "sandbox",
+  "account": "654654616949",
+  "region": "us-east-1",
+  "outputs": {
+    "StmtInterpreter": {
+      "harnessArn": "arn:aws:bedrock-agentcore:us-east-1:654654616949:harness/ClaudeHarnessEvidence_StmtInterpreter-Jx8JUA8O1S",
+      "harnessId": "ClaudeHarnessEvidence_StmtInterpreter-Jx8JUA8O1S",
+      "underlyingRuntimeArn": "arn:aws:bedrock-agentcore:us-east-1:654654616949:runtime/harness_ClaudeHarnessEvidence_StmtInterpreter-Kjn7S9CyYC",
+      "roleArn": "arn:aws:iam::654654616949:role/ClaudeHarnessEvidence_StmtInterpreter",
+      "status": "READY",
+      "version": "1"
+    },
+    "LedgerReconciler": {
+      "harnessArn": "arn:aws:bedrock-agentcore:us-east-1:654654616949:harness/ClaudeHarnessEvidence_LedgerReconciler-dgn0FdelLz",
+      "harnessId": "ClaudeHarnessEvidence_LedgerReconciler-dgn0FdelLz",
+      "underlyingRuntimeArn": "arn:aws:bedrock-agentcore:us-east-1:654654616949:runtime/harness_ClaudeHarnessEvidence_LedgerReconciler-9VMBuTBpMP",
+      "roleArn": "arn:aws:iam::654654616949:role/ClaudeHarnessEvidence_LedgerReconciler",
+      "status": "READY",
+      "version": "1"
+    }
+  }
+}

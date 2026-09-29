@@ -1,0 +1,98 @@
+{
+  "coordinator_host_fingerprint": {
+    "pid": 88284,
+    "hostname": "Mac.homelan",
+    "cwd": "/Users/richardkang/Documents/workplace/multi-agents-design-pattern/ClaudeHarnessEvidence/mode_a",
+    "aws_profile_env_var_set": true,
+    "aws_region_env_var_set": true
+  },
+  "coordinator_aws_identity": {
+    "Account": "654654616949",
+    "Arn": "arn:aws:iam::654654616949:user/richard@doit.com"
+  },
+  "serial": {
+    "run_id": "ce1bbda3-cb8a-457f-a238-e760bf2923fd",
+    "mode": "serial",
+    "total_elapsed_ms": 20746
+  },
+  "serial_workers": [
+    {
+      "worker_id": "P",
+      "status": "complete",
+      "elapsed_ms": 9864,
+      "pid_at_start": 88284,
+      "pid_at_end": 88284,
+      "result_text": "The fragment contains invoice INV-1001 for $500.00 and invoice INV-1002 for $250.00.",
+      "host_fingerprint": {
+        "pid": 88284,
+        "hostname": "Mac.homelan",
+        "cwd": "/Users/richardkang/Documents/workplace/multi-agents-design-pattern/ClaudeHarnessEvidence/mode_a",
+        "aws_profile_env_var_set": true,
+        "aws_region_env_var_set": true
+      }
+    },
+    {
+      "worker_id": "Q",
+      "status": "complete",
+      "elapsed_ms": 10881,
+      "pid_at_start": 88284,
+      "pid_at_end": 88284,
+      "result_text": "The statement contains invoice INV-1001 for $500.00 and invoice INV-1003 for $125.00.",
+      "host_fingerprint": {
+        "pid": 88284,
+        "hostname": "Mac.homelan",
+        "cwd": "/Users/richardkang/Documents/workplace/multi-agents-design-pattern/ClaudeHarnessEvidence/mode_a",
+        "aws_profile_env_var_set": true,
+        "aws_region_env_var_set": true
+      }
+    }
+  ],
+  "concurrent": {
+    "run_id": "f49c5d13-2432-4323-a768-efd87b6d8a21",
+    "mode": "concurrent",
+    "total_elapsed_ms": 9611
+  },
+  "concurrent_workers": [
+    {
+      "worker_id": "P",
+      "status": "complete",
+      "elapsed_ms": 9611,
+      "pid_at_start": 88284,
+      "pid_at_end": 88284,
+      "result_text": "The fragment contains invoice INV-1001 for $500.00 and invoice INV-1002 for $250.00.",
+      "host_fingerprint": {
+        "pid": 88284,
+        "hostname": "Mac.homelan",
+        "cwd": "/Users/richardkang/Documents/workplace/multi-agents-design-pattern/ClaudeHarnessEvidence/mode_a",
+        "aws_profile_env_var_set": true,
+        "aws_region_env_var_set": true
+      }
+    },
+    {
+      "worker_id": "Q",
+      "status": "complete",
+      "elapsed_ms": 9554,
+      "pid_at_start": 88284,
+      "pid_at_end": 88284,
+      "result_text": "The fragment contains invoice INV-1001 for $500.00 and invoice INV-1003 for $125.00.",
+      "host_fingerprint": {
+        "pid": 88284,
+        "hostname": "Mac.homelan",
+        "cwd": "/Users/richardkang/Documents/workplace/multi-agents-design-pattern/ClaudeHarnessEvidence/mode_a",
+        "aws_profile_env_var_set": true,
+        "aws_region_env_var_set": true
+      }
+    }
+  ],
+  "same_host_evidence": {
+    "distinct_pids_observed_across_coordinator_and_all_workers": [
+      88284
+    ],
+    "single_shared_pid": true
+  },
+  "timing_evidence": {
+    "serial_total_elapsed_ms": 20746,
+    "concurrent_total_elapsed_ms": 9611,
+    "concurrent_faster_than_serial": true
+  }
+}

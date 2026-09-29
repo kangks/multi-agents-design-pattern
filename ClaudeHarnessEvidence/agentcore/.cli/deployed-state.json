@@ -1,0 +1,30 @@
+{
+  "targets": {
+    "sandbox": {
+      "resources": {
+        "harnesses": {
+          "LedgerReconciler": {
+            "harnessId": "ClaudeHarnessEvidence_LedgerReconciler-dgn0FdelLz",
+            "harnessArn": "arn:aws:bedrock-agentcore:us-east-1:654654616949:harness/ClaudeHarnessEvidence_LedgerReconciler-dgn0FdelLz",
+            "roleArn": "arn:aws:iam::654654616949:role/ClaudeHarnessEvidence_LedgerReconciler",
+            "status": "READY",
+            "harnessVersion": 1,
+            "agentRuntimeArn": "arn:aws:bedrock-agentcore:us-east-1:654654616949:runtime/harness_ClaudeHarnessEvidence_LedgerReconciler-9VMBuTBpMP",
+            "provisioner": "cloudformation"
+          },
+          "StmtInterpreter": {
+            "harnessId": "ClaudeHarnessEvidence_StmtInterpreter-Jx8JUA8O1S",
+            "harnessArn": "arn:aws:bedrock-agentcore:us-east-1:654654616949:harness/ClaudeHarnessEvidence_StmtInterpreter-Jx8JUA8O1S",
+            "roleArn": "arn:aws:iam::654654616949:role/ClaudeHarnessEvidence_StmtInterpreter",
+            "status": "READY",
+            "harnessVersion": 1,
+            "agentRuntimeArn": "arn:aws:bedrock-agentcore:us-east-1:654654616949:runtime/harness_ClaudeHarnessEvidence_StmtInterpreter-Kjn7S9CyYC",
+            "provisioner": "cloudformation"
+          }
+        },
+        "stackName": "AgentCore-ClaudeHarnessEvidence-sandbox",
+        "deployHash": "04c4c831a94557fb"
+      }
+    }
+  }
+}

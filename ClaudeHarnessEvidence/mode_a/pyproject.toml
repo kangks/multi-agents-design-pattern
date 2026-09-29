@@ -1,0 +1,16 @@
+[project]
+name = "mode-a-control"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "boto3>=1.43.103",
+    "claude-agent-sdk>=0.2.160",
+    "pydantic>=2.13.5",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]

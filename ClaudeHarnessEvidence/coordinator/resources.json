@@ -1,0 +1,7 @@
+{
+  "_comment": "Canonical allowlist of specialist Harness ARNs the coordinator may target. Populated from `agentcore deploy` stack outputs after deploying ../agentcore. The adapter (adapter.py) refuses any ARN not present here, before ever calling AWS.",
+  "specialists": {
+    "StmtInterpreter": "arn:aws:bedrock-agentcore:us-east-1:654654616949:harness/ClaudeHarnessEvidence_StmtInterpreter-Jx8JUA8O1S",
+    "LedgerReconciler": "arn:aws:bedrock-agentcore:us-east-1:654654616949:harness/ClaudeHarnessEvidence_LedgerReconciler-dgn0FdelLz"
+  }
+}
